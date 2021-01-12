@@ -3,6 +3,21 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 */
+
+// menu in the navigation bar
+
+/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+function myFunction() {
+	var x = document.getElementById("myLinks");
+	if (x.style.display === "block") {
+	  x.style.display = "none";
+	} else {
+	  x.style.display = "block";
+	}
+  }
+
+
+
 (function($) {
 
 	var	$window = $(window),
@@ -28,18 +43,18 @@
 		});
 
 	// Menu.
-		$('#menu')
-			.append('<a href="#menu" class="close"></a>')
-			.appendTo($body)
-			.panel({
-				target: $body,
-				visibleClass: 'is-menu-visible',
-				delay: 500,
-				hideOnClick: true,
-				hideOnSwipe: true,
-				resetScroll: true,
-				resetForms: true,
-				side: 'right'
-			});
+		// $('#menu')
+		// 	.append('<a href="#menu" class="close"></a>')
+		// 	.appendTo($body)
+		// 	.panel({
+		// 		target: $body,
+		// 		visibleClass: 'is-menu-visible',
+		// 		delay: 500,
+		// 		hideOnClick: true,
+		// 		hideOnSwipe: true,
+		// 		resetScroll: true,
+		// 		resetForms: true,
+		// 		side: 'right'
+		// 	});
 
-})(jQuery);
+});

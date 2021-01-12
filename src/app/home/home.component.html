@@ -36,30 +36,56 @@
 	<body class="is-preload">
 
 		<!-- Header -->
-			<header id="header">
-				<a class="logo" href="index.html">Traffic Analysis</a>
-				<nav>
-					<a href="#menu">Menu</a>
+			<!-- <header id="header">
+				<a class="logo" href="index.html">Traffic Analysis</a> -->
+				<!-- <nav class="link">
+					<a href="#menu">Menu
+						<div class="topnav" id="menu">
+							<div id="myLinks">
+								
+								<a href="#news">News</a>
+								<a href="#contact">Contact</a>
+								<a href="#about">About</a>
+							
+							  </div>
+							  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+								<i class="fa fa-bars"></i>
+							  </a>
+					</div>
+					</a>
+					
 				</nav>
-			</header>
-
+			</header> -->
 		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="elements.html">Elements</a></li>
-					<li><a href="generic.html">Generic</a></li>
-				</ul>
+
+		<header id="header">
+			<a class="logo" href="index.html">Industrious</a>
+			<nav>
+				<a href="#menu" onclick="myFunction()">Menu</a>
 			</nav>
+		</header>
+
+	<!-- Nav -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="elements.html">Elements</a></li>
+				<li><a href="generic.html">Generic</a></li>
+			</ul>
+		</nav>
+		
 
 		<!-- Banner -->
-			<section >
+			<section  >
 				<div class="inner">
 					<h1>Traffic</h1>
 					<p>To determine the location of key nodes, the routing structure, and even application behavior patterns</p>
                 </div>
                 <!-- <button onclick="enableAutoplay()" type="button">Enable autoplay</button> -->
-				<video id="myVideo" width="1400" height="1000" controls="controls">
+				<!-- <video id="myVideo" width="1400" height="1000" controls="controls"> -->
+
+					<!-- autoplay a video -->
+					<video loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
                     <source src="assets/images/banner.mp4" type="video/mp4">
                 </video>
                 <p id="demo"></p>
@@ -67,77 +93,79 @@
 
 		<!-- Highlights -->
 			<section class="wrapper">
-				<div class="inner">
-					<header class="special">
-						<h2>Sem turpis amet semper</h2>
-						<p>In arcu accumsan arcu adipiscing accumsan orci ac. Felis id enim aliquet. Accumsan ac integer lobortis commodo ornare aliquet accumsan erat tempus amet porttitor.</p>
-					</header>
-					<div class="highlights">
-						<section>
-							<div class="content">
-								<header>
-									<a href="#" class="icon fa-vcard-o"><span class="label">Icon</span></a>
-									<h3>Feugiat consequat</h3>
-								</header>
-								<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<header>
-									<a href="#" class="icon fa-files-o"><span class="label">Icon</span></a>
-									<h3>Ante sem integer</h3>
-								</header>
-								<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<header>
-									<a href="#" class="icon fa-floppy-o"><span class="label">Icon</span></a>
-									<h3>Ipsum consequat</h3>
-								</header>
-								<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<header>
-									<a href="#" class="icon fa-line-chart"><span class="label">Icon</span></a>
-									<h3>Interdum gravida</h3>
-								</header>
-								<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<header>
-									<a href="#" class="icon fa-paper-plane-o"><span class="label">Icon</span></a>
-									<h3>Faucibus consequat</h3>
-								</header>
-								<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-							</div>
-						</section>
-						<section>
-							<div class="content">
-								<header>
-									<a href="#" class="icon fa-qrcode"><span class="label">Icon</span></a>
-									<h3>Accumsan viverra</h3>
-								</header>
-								<p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p>
-							</div>
-						</section>
+				<div class="row">
+					<div class="col-4" >
+				<div class="card" style="width: 18rem;" >
+					<img src="assets/images/banner.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <p class="card-text">Sample Text 1</p>
 					</div>
+				  </div>
+				</div>
+
+				  <div class="col-4">
+				  <div class="card" style="width: 18rem;">
+					<img src="assets/images/banner.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <p class="card-text">Sample Text 2</p>
+					</div>
+				  </div>
+				</div>
+				   
+				  <div class="col-4">
+				  <div class="card" style="width: 18rem;">
+					<img src="assets/images/banner.jpg" class="card-img-top" alt="...">
+					<div class="card-body">
+					  <p class="card-text">Sample Text 3</p>
+					</div>
+				  </div>
+				</div>
 				</div>
 			</section>
 
 		<!-- CTA -->
-			<section id="cta" class="wrapper">
-				<div class="inner">
-					<h2>Curabitur ullamcorper ultricies</h2>
-					<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.</p>
-				</div>
+			<section >
+				<div class="row">
+
+					<div class="col-lg-6">
+					  <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
+					  <button type="button" class="btn btn-dark btn-lg download-button"><i class="fab fa-apple"></i> Download</button>
+					  <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play"></i> Download</button>
+					</div>
+			
+					<div class="col-lg-6">
+					  <img class="title-image" src="assets/images/banner.jpg" alt="iphone-mockup">
+					</div>
+			
+				  </div>
+			
+				
 			</section>
+
+			<section class="colored-section" id="testimonials">
+
+				<div id="testimonial-carousel" class="carousel slide" data-ride="false">
+				  <div class="carousel-inner">
+					<div class="carousel-item active container-fluid">
+					  <h2 class="testimonial-text">I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+					  <img class="testimonial-image" src="assets/images/banner.jpg" alt="dog-profile">
+					  <em>Pebbles, New York</em>
+					</div>
+					<div class="carousel-item container-fluid">
+					  <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+					  <img class="testimonial-image" src="assets/images/banner.jpg" alt="lady-profile">
+					  <em>Beverly, Illinois</em>
+					</div>
+				  </div>
+				  <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon"></span>
+				  </a>
+				  <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon"></span>
+				  </a>
+				</div>
+			
+			  </section>
 
 		<!-- Testimonials -->
 			<section class="wrapper">
@@ -227,4 +255,6 @@
 			
 
 	</body>
+
+	
 
